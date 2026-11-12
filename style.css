@@ -1,0 +1,93 @@
+* {
+            margin: 0; /* Exigência: margin */
+            padding: 0; /* Exigência: padding */
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            /* Exigência: background-color */
+            background-color: #e2e8f0; 
+            /* Exigência: display flex para centralizar tudo */
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* CONTAINER PRINCIPAL */
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #ef4444; /* Cor vermelha lembrando a Pokédex */
+        }
+
+        /* ÁREA DO FORMULÁRIO */
+        /* Exigência: Diferenciação visual da área do formulário */
+        .area-formulario {
+            background-color: #fee2e2; /* Fundo vermelho bem claro */
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            /* Exigência: display flex para alinhar input e botão */
+            display: flex; 
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #ef4444;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #dc2626;
+        }
+
+        /* ÁREA DE RESULTADOS */
+        /* Exigência: Diferenciação visual da área de resultados */
+        .area-resultado {
+            background-color: #f1f5f9; /* Fundo cinza claro */
+            padding: 20px;
+            border-radius: 8px;
+            min-height: 150px;
+        }
+
+        #mensagem {
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Exigência: Lista HTML */
+        ul {
+            list-style-type: none; /* Tira as bolinhas da lista */
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 16px;
+            color: #333;
+        }
