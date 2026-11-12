@@ -1,23 +1,22 @@
 * {
-            margin: 0; /* Exigência: margin */
-            padding: 0; /* Exigência: padding */
+            margin: 0; 
+            padding: 0; 
             box-sizing: border-box;
             font-family: Arial, sans-serif;
         }
 
         body {
-            /* Exigência: background-color */
+            
             background-color: #e2e8f0; 
-            /* Exigência: display flex para centralizar tudo */
             display: flex; 
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            background-image: url('https://images8.alphacoders.com/124/thumb-1920-1243956.jpg');
         }
 
-        /* CONTAINER PRINCIPAL */
         .container {
-            background-color: white;
+            background-color: rgba(245, 30, 30, 0.877);
             padding: 30px;
             border-radius: 10px;
             width: 100%;
@@ -28,17 +27,46 @@
 
         h1 {
             margin-bottom: 20px;
-            color: #ef4444; /* Cor vermelha lembrando a Pokédex */
+            color: #f8f8f8; 
         }
 
-        /* ÁREA DO FORMULÁRIO */
-        /* Exigência: Diferenciação visual da área do formulário */
+        h2 {
+            margin-bottom: 30px;
+            color: #f2f5f8;
+        }
+
+        .area-sugestoes {
+            margin-bottom: 20px;
+            color: #f8f8f8; 
+
+        }
+
+        .area-sugestoes p {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .lista-nomes {
+            display: flex;
+            flex-wrap: wrap; 
+            gap: 10px;
+        }
+
+        .nome-sugestao {
+            background-color: #e2e8f0;
+            padding: 6px 12px;
+            border-radius: 60px; 
+            font-size: 14px;
+            color: #333;
+            border: 1px solid #cbd5e1;
+            transition: background-color 0.2s;
+        }
+
         .area-formulario {
-            background-color: #fee2e2; /* Fundo vermelho bem claro */
+            background-color: #f7f7f4; 
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 8px;
-            /* Exigência: display flex para alinhar input e botão */
             display: flex; 
             flex-direction: column;
             gap: 10px;
@@ -65,10 +93,8 @@
             background-color: #dc2626;
         }
 
-        /* ÁREA DE RESULTADOS */
-        /* Exigência: Diferenciação visual da área de resultados */
         .area-resultado {
-            background-color: #f1f5f9; /* Fundo cinza claro */
+            background-color: #f1f5f9; 
             padding: 20px;
             border-radius: 8px;
             min-height: 150px;
@@ -79,9 +105,9 @@
             color: #333;
         }
 
-        /* Exigência: Lista HTML */
+
         ul {
-            list-style-type: none; /* Tira as bolinhas da lista */
+            list-style-type: none;
             text-align: left;
             margin-top: 10px;
         }

@@ -4,20 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-
-  <title>Pokédex</title>
+  <title>Pokédex - Alan</title>
 </head>
 <body>
     <div class="container">
-        <h1>Minha Pokédex - - Alan Alexis M Benitez</h1>
+        <h1>🟣 Pokédex V2.1.4</h1>
+        <h2> by: Alan Alexis M Benitez</h2>
+
+    <div class="area-sugestoes">
+    <div class="lista-nomes">
+        <span class="nome-sugestao">bulbasaur</span>
+        <span class="nome-sugestao">blastoise</span>
+        <span class="nome-sugestao">pidgeotto</span>
+        <span class="nome-sugestao">pidgey</span>
+        <span class="nome-sugestao">rattata</span>
+        <span class="nome-sugestao">raticate</span>
+        <span class="nome-sugestao">spearow</span>
+    </div>
+</div>
 
         <form id="formulario-pokemon" class="area-formulario">
             <input type="text" id="input-pokemon" placeholder="Nome do Pokémon" required>
-            <button type="submit">Pesquisar</button>
+            <button type="submit">Pesquisar Dados</button>
         </form>
 
         <div id="area-resultado" class="area-resultado">
-            <p id="mensagem">Aguardando</p>
+            <p id="mensagem">Aguarde o retorno dos resultados...</p>
             
             <ul id="lista-pokemon" style="display: none;">
                 <li><strong>Nome:</strong> <span id="info-nome"></span></li>
@@ -29,6 +41,5 @@
         </div>
     </div>
     <script src="index.js"></script>
-
 </body>
 </html>
